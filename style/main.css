@@ -1,0 +1,65 @@
+/* Сброс базовых отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Фон и шрифт */
+body {
+    background-color: #B7090E;
+    font-family: Arial, sans-serif;
+    color: #FFD700;
+}
+
+/* Обертка */
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/* Левая и правая колонка */
+.music_column_left,
+.music_column_right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Логотип по центру */
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 790px;
+    /* Подгони под макет */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.music_column_left p,
+.music_column_right p {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.music_column_left p:hover,
+.music_column_right p:hover {
+    transform: scale(1.08);
+    /* Лёгкое увеличение */
+    color: #fff;
+    /* Меняем цвет на белый */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
